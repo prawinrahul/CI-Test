@@ -3,8 +3,12 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
 
+chrome_driver_path = '/var/lib/jenkins/.cache/selenium/chromedriver/linux64/122.0.6261.128/chromedriver'
+
 chrome_options = Options()
-driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome(executable_path=chrome_driver_path, options=chrome_options)
+
+# driver = webdriver.Chrome(options=chrome_options)
 
 driver.get("http://127.0.0.1:5500/todo.html")
 driver.maximize_window()
