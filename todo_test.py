@@ -9,7 +9,7 @@ chrome_options = Options()
 chrome_options.binary_location = '/opt/google/chrome/google-chrome'  # Path to Chrome binary
 chrome_driver_path = '/var/lib/jenkins/.cache/selenium/chromedriver/linux64/122.0.6261.128/chromedriver'
 driver = webdriver.Chrome(executable_path=chrome_driver_path, options=chrome_options)
-chrome_options.add_argument("webdriver.chrome.driver=" + chrome_driver_path)
+# chrome_options.add_argument("webdriver.chrome.driver=" + chrome_driver_path)
 
 driver = webdriver.Chrome(options=chrome_options)
 
