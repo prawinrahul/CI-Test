@@ -5,6 +5,7 @@ import time
 
 chrome_options = Options()
 driver = webdriver.Chrome(options=chrome_options)
+driver.maximize_window()
 
 def add_task(task):
     try:
