@@ -9,7 +9,9 @@ driver.maximize_window()
 
 def add_task(task):
     try:
-        driver.get("http://127.0.0.1:5500/index.html")
+        driver.get("http://127.0.0.1:5500/index.html")          
+        time.sleep(10)
+        
         task_input = driver.find_element(By.XPATH, "//input[@id='taskInput']")
         task_input.send_keys(task)
 
