@@ -33,5 +33,6 @@ try:
 except AssertionError:
     print("Test for adding tasks failed.")
 
+driver.quit()
  
           
