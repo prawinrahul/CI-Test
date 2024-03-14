@@ -14,7 +14,7 @@ driver.maximize_window()
 
 def add_task(task):
     try:
-        task_input = driver.find_element(By.XPATH,"//input[@id='taskInput']")
+        task_input = driver.find_element(By.XPATH,"//input[@id='tasInput']")
         task_input.send_keys(task)
 
         add_button = driver.find_element(By.XPATH,"//button[@onclick='addTask()']")
